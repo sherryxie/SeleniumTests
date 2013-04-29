@@ -1,10 +1,10 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
-<suite name="Stevia-Test-Suite">
+<suite name="TMall-Test-Suite">
 
     <parameter name="rcHost" value="localhost" />
     <parameter name="rcPort" value="4444" />
-    <parameter name="targetHostUrl" value="http://www.google.com" />
+    <parameter name="targetHostUrl" value="http://www.tmall.com" />
     <parameter name="debugging" value="true" />
     <parameter name="browser" value="firefox" />
     <parameter name="profile" value="" />
@@ -16,10 +16,10 @@
         <listener class-name="org.uncommons.reportng.HTMLReporter" />
     </listeners>
 
-    <!--test name="Test Google Search using Firefox Web Driver" preserve-order="true">
+    <test name="Test Google Search using Firefox Web Driver" preserve-order="true">
         <classes>
-            <class name="com.persado.oss.quality.stevia.tests.TestGoogleSearch" />
+            <class name="org.san.test.integration.cases.TMallHomeTest" />
         </classes>
-    </test-->
+    </test>
 
 </suite>
