@@ -3,6 +3,7 @@ package org.san.test.integration.cases;
 
 import com.persado.oss.quality.stevia.spring.SteviaTestBase;
 import org.san.test.integration.pages.TMallHomePage;
+import org.san.test.integration.pages.TMallSearchPage;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.testng.annotations.Test;
 
@@ -14,15 +15,18 @@ import org.testng.annotations.Test;
  * To change this template use File | Settings | File Templates.
  */
 
-public class TMallHomeTest extends SteviaTestBase{
+public class TMallSearchTest extends SteviaTestBase{
     @Autowired
-    TMallHomePage tMallHome;
+    TMallHomePage tMallHomePage;
+    @Autowired
+    TMallSearchPage tMallSearch;
+
     @Test
 
     public void testSpringAutoWire(){
-        tMallHome.inputSearch("扫地机器人");
-        tMallHome.search();
-        tMallHome.validateSearchResult();
-        tMallHome.randomPickProduct();
+        tMallHomePage.inputSearch("扫地机器人");
+        tMallHomePage.search();
+        tMallSearch.validateSearchResult();
+        tMallSearch.randomPickProduct();
     }
 }

@@ -16,9 +16,9 @@
         <listener class-name="org.uncommons.reportng.HTMLReporter" />
     </listeners>
 
-    <test name="Test Google Search using Firefox Web Driver" preserve-order="true">
+    <test name="Test TMall Search using Firefox Web Driver" preserve-order="true">
         <classes>
-            <class name="org.san.test.integration.cases.TMallHomeTest" />
+            <class name="org.san.test.integration.cases.TMallSearchTest" />
         </classes>
     </test>
 
