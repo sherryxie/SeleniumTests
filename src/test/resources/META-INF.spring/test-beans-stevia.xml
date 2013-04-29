@@ -9,7 +9,5 @@
 
     <context:annotation-config />
     <aop:aspectj-autoproxy />
-
-    <bean id="googleHomePage" class="com.persado.oss.quality.stevia.pageObjects.GoogleHomePage" />
-    <bean id="persadoHomePage" class="com.persado.oss.quality.stevia.pageObjects.PersadoHomePage" />
+    <context:component-scan base-package="org.san.test.integration" />
 </beans>
