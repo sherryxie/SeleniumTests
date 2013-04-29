@@ -17,7 +17,7 @@ import java.util.Random;
  * To change this template use File | Settings | File Templates.
  */
 
-public class TMallSearchPage extends WebComponent{
+public class TMallSearchResultPage extends WebComponent{
 
     public void validateSearchResult(){
         SteviaContext.verify().elementPresent("//a[@title='扫地机']");

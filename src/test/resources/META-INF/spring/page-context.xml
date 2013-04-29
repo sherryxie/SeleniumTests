@@ -11,6 +11,6 @@
         <property name="searchInputLocator" value="mq"/>
         <property name="searchButtonLocator" value="J_MallSearchBtn"/>
     </bean>
-    <bean id="tMallSearchPage" class="org.san.test.integration.pages.TMallSearchPage">
+    <bean id="tMallSearchPage" class="org.san.test.integration.pages.TMallSearchResultPage">
     </bean>
 </beans>

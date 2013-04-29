@@ -3,7 +3,7 @@ package org.san.test.integration.cases;
 
 import com.persado.oss.quality.stevia.spring.SteviaTestBase;
 import org.san.test.integration.pages.TMallHomePage;
-import org.san.test.integration.pages.TMallSearchPage;
+import org.san.test.integration.pages.TMallSearchResultPage;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.testng.annotations.Test;
 
@@ -19,7 +19,7 @@ public class TMallSearchTest extends SteviaTestBase{
     @Autowired
     TMallHomePage tMallHomePage;
     @Autowired
-    TMallSearchPage tMallSearch;
+    TMallSearchResultPage tMallSearch;
 
     @Test
 
