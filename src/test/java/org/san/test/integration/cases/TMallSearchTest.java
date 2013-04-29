@@ -19,14 +19,14 @@ public class TMallSearchTest extends SteviaTestBase{
     @Autowired
     TMallHomePage tMallHomePage;
     @Autowired
-    TMallSearchResultPage tMallSearch;
+    TMallSearchResultPage tMallSearchResultPage;
 
     @Test
 
     public void testSpringAutoWire(){
         tMallHomePage.inputSearch("扫地机器人");
         tMallHomePage.search();
-        tMallSearch.validateSearchResult();
-        tMallSearch.randomPickProduct();
+        tMallSearchResultPage.validateSearchResult();
+        tMallSearchResultPage.randomPickProduct();
     }
 }
